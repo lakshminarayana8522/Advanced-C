@@ -26,5 +26,11 @@ advanced system programming
 <td>thread operations</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/threads">code</a></td>
 </tr>
+
+<tr>
+<td>IPC pipe</td>
+<td>pipe operations</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/IPCPipe">code</a></td>
+</tr>
 </table>
 
