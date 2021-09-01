@@ -1,35 +1,37 @@
+/**
+ * This  program will represents the how write single character to a file
+ * filename : fputc.c
+ * author   : Lakshmi Narayana S 
+ * email    : narayana8522@gmail.com
+ * date     : 1 Sep 2021
+ */
 
-/* This  program will represents the how write single character to a file
- *
- *
- *
- *
- *
- *      author: Lakshmi Narayana S                */
-
-
-
-
-
-
+/*! includes */
 #include<stdio.h>
 #include<stdlib.h>
 
+/*! main program starts */
 int main(){
-	FILE *fp;                          // declaring a file handler
+	/*! declaring a file pointer to handle with files */
+	FILE *fp;                         
+	/*! to hold the data to write to file */
 	int ch;
-	fp = fopen("file1.c","w");          // opening a file in write mode. if file not exists it will creates a new file with name specified in path name.
-	if(fp==NULL){                                             // on failure fopen will return NULL
+	/*! opening file1.c in write mode */
+	fp = fopen("file1.c","w");
+	/*! on failure fopen will return NULL */	
+	if(fp==NULL){                          
 		printf("Error while opening a file...\n");
 		exit(1);
 	}
 	printf("file opend successfully.....\n");
-	printf("Enter the data: ");                                 
-	while((ch=getchar())!=EOF){                  // through getchar() function read one character from user and stored it in ch variable
-		                                    
-		fputc(ch,fp);                       // the fputc function will put the data in ch variable to the file associated with file handler fp.
+	printf("Enter the data: ");
+	/*! data is read from user through getchar function */	
+	while((ch=getchar())!=EOF){             
+		/*! writing character into file1.c */                                    
+		fputc(ch,fp);                      .
 	}
-	fclose(fp);                                  //closing a file
+	/*! closing the file */
+	fclose(fp);    
 }
 	
 

@@ -32,5 +32,9 @@ advanced system programming
 <td>what is pipe and how to communicate between the processes through pipe</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/IPCPipe">code</a></td>
 </tr>
+<tr>
+<td>Bubble sort</td>
+<td>bubble sort algorithm and its programming examples</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/bubblesort">code</a></td>
 </table>
 

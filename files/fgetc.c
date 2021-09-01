@@ -1,30 +1,34 @@
-/*  This program represents the how to read single character from a file
- *
- *
- *
- *
- *  Author: Lakshmi Narayana S              */
+/**
+ * This program represents the how to read single character from a file
+ * filename  : fgetc.c
+ * author    : Lakshmi Narayana S  
+ * email     : narayana8522@gmail.com
+ * date      : 1 Sep 2021
+ */
 
-
-
-
+/*! includes */
 #include<stdio.h>
 #include<stdlib.h>
 
+/*! main program starts */
 int main(){
-	FILE *fp;                           //Declaring a File handler
+	/*! declaring file pointer to handle with files */
+	FILE *fp;
+	/*! ch  varible to hold the data read through fgetc */
 	int ch;
-	fp = fopen("file1.c","r");          // opening a file  in read mode. It will return the reference to the file that will be stored in file handler fp.
-	if(fp == NULL){                     // On failure fopen will return NULL.
+	/*! opening file1.c in read mode */
+	fp = fopen("file1.c","r");
+	/*! on failure fopen will return NULL */	
+	if(fp == NULL){                    
 		printf("Error while opening a file....\n");
 		exit(1);
 	}
-	printf("File opend successfully...\n");                     
-	while((ch=fgetc(fp))!=EOF){                 // fgetc function takes one argument that is file handler fp. on sucsess it will return character from file and increment the fp by one
-		                                    // the wile loop will be executed untill EOF(end of the file) reached. the EOF is integer constant it's value is -1. it will be placed 
-						    // in the file at last.
+	printf("File opend successfully...\n");
+	/*! for each itaration fgetc reads single character from file1.c. This while loop will iterartes until it reaches EOF (End OF the File). */	
+	while((ch=fgetc(fp))!=EOF){              
 		printf("%c",ch);
 	}
-	fclose(fp);                         //closing a file. it flushes the buffer associated with file and closes the file.
+	/*! closing the file */
+	fclose(fp);            
 }
 
