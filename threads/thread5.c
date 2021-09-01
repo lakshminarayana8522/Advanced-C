@@ -1,27 +1,24 @@
-/* This program  is the example to explain how multiple threads are accesing the shared resource
- *
- * here number variable is shared between all threads
- *
- * in this follwing program the thread which accesing number variable with value 0 will be terminated and the remaining two threads will be executed normally 
- *
- *
- *
- * author: LaKshmi Narayana S      */
+/**
+ * This program  is the example to explain how multiple threads are accesing the shared resource
+ * filename  : thread3.c
+ * author    : LaKshmi Narayana S
+ * email     : narayana8522@gmail.com
+ * date      : 1 Sep 2021
+ */
 
-
-
-
-
+/*! includes */
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
 #include<pthread.h>
-
-int number = 14;              //declaring a global variable it will be shared between the all threads
-
-void *fun(void *args)      //thread handler which will be excuted by the 3 threads concurrently
+/*! global variable shared between all threads */
+int number = 14;             
+/*! thread routine */
+void *fun(void *args)     
 {
-	while(number)                           //in this program for thread 1 while accssing the number will be zero after some looping. so, it will be terminated.
+	/*! it executes infinate times by thread 2 & 3. the while loop will be failed only when the number is 0. 
+	 * in this program when the value of number becomes zero that value will be read by thethread 1 and it terminates. */
+	while(number)          
 	{
 		sleep(1);
 		number--;
@@ -29,16 +26,22 @@ void *fun(void *args)      //thread handler which will be excuted by the 3 threa
 	}
 	return NULL;
 }
-
+/*! main programs starts */
 int main()
 {
-	pthread_t t1,t2,t3;                          //declaring thread variables
-	pthread_create(&t1,NULL,fun,(void *)111);      //creating thread1
-	pthread_create(&t2,NULL,fun,(void *)222);     //creating thread 2
-	pthread_create(&t3,NULL,fun,(void *)333);     //creating thread 3
-
-	pthread_join(t1,NULL);                 //waits untill thread 1 finishes
-	pthread_join(t2,NULL);                 //waits untill thread2 finishes
-	pthread_join(t3,NULL);                //waits untill thread 3 finishes
+	/*! declaring thread varibles to hold the thread ID's */
+	pthread_t t1,t2,t3;                          
+	/*! creating thread 1 */
+	pthread_create(&t1,NULL,fun,(void *)111);     
+	/*! creating thread 2 */
+	pthread_create(&t2,NULL,fun,(void *)222);     
+	/*! creating thread 3 */
+	pthread_create(&t3,NULL,fun,(void *)333);    
+        /* waiting for thread1 to finish */
+	pthread_join(t1,NULL);             
+	/*! waiting for thread 2 to finish */
+	pthread_join(t2,NULL);               
+	/*! waiting for thread 3 to finish */
+	pthread_join(t3,NULL);               
+	return 0;
 }
-
