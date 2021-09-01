@@ -1,6 +1,6 @@
 
 
-AtExit()
+<h1>AtExit()</h1>
 
 
 Sometimes, an application needs to automatically perform some operations on process termination such as garbage collection.
@@ -15,3 +15,14 @@ IT is possible to register multiple exit handlers.
 When the program terminates these exit handlers are called in reverse order of registration. 
 
 A child process created via fork() inherits a copy of its parent's exit handler registrations.
+
+this folder contains the programming examples of exit handlers.
+
+<h2>atexit1.c</h2>
+This file contains program to  create exit handler and registering exit handler.
+
+<h2>atexit2.c</h2>
+This file contains program to create multiple exit handlers and registering them, shows in which order they called when program terminates.
+
+<h2>atexit3.c</h2>
+This file contains program to understand how the register handlers are inherited when we create a child process using fork.
