@@ -15,4 +15,15 @@ int pipe(int pipefd[2]);
 Returns 0 on success, or -1 on failure
 
 This folder contains the programming examples of pipe
- 
+
+<h2>pipe1.c</h2>
+This file contains the program to undestand how to create pipe.
+
+<h2>pipe2.c</h2>
+This file contains the program to understand how communication happens through pipe.
+
+<h2>pipe3.c</h2>
+This file contains the program to understand the communication between the process by stream  returned by fdopen system system call
+
+<h2>pipe4.c</h2>
+This file contains the program to understand the commnication between the main process and process created by the popen system call.
