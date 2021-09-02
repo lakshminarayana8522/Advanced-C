@@ -12,29 +12,36 @@ advanced system programming
 </tr>
 <tr>
 <td>atExit</td>
-<td>How atexit handlers work and programming examples</td>
+<td>The atexit handler registers the user functions to be called on normal process termination.</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/atExit">code</a></td>
 </tr>
 <tr>
 <td>Files</td>
-<td>programming examples on file operations</td>
+<td>A file represents the a sequenceof bytes. c programming language provides high level functions to perform file I/O operations.</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/files">code</a></td>
 </tr>
 
 <tr>
 <td>threads</td>
-<td>what is thread and programming examples</td>
+<td>Threads are mechanism to do more than one job at a time. Threads are called as light weight processes..</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/threads">code</a></td>
 </tr>
 
 <tr>
 <td>IPC pipe</td>
-<td>what is pipe and how to communicate between the processes through pipe</td>
+<td>Pipes can be used to transfer data between the related processes like processes created by fork.</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/IPCPipe">code</a></td>
 </tr>
 <tr>
 <td>Bubble sort</td>
-<td>bubble sort algorithm and its programming examples</td>
+<td>bubble sort is one of the sorting technique. in this it performs the sorting by comparing adjacent elements</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/bubblesort">code</a></td>
+</tr>
+
+<tr>
+<td>Selection sort</td>
+<td>Selection sort performs sorting by comparing value at index with all the elements in an array</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/selectionSort">code</a></td>
+</tr>
 </table>
 
