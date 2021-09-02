@@ -43,5 +43,10 @@ advanced system programming
 <td>Selection sort performs sorting by comparing value at index with all the elements in an array</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/selectionSort">code</a></td>
 </tr>
+<tr>
+<td>fork</td>
+<td>fork() system call creates a new process, the child, which is an exact duplicate of the calling process, the parent.</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/fork">code</a></td>
+</tr>
 </table>
 
