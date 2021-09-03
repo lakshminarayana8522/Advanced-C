@@ -1,27 +1,37 @@
-/* This program will represents the how to insert string into a file using  fputs function
- *
- *
- *
- *
- *   author: Lakshmi Narayana S            */
+/**
+ * This program will represents the how to insert string into a file using  fputs function
+ * filename : fputs.c
+ * author   : Lakshmi narayana S
+ * email    : narayana8522@gmail.com
+ * date     : 3 Sep 2021
+ */
 
+/*! includes headers */
+#include<stdio.h>  /*! required for printf(),fgets() */
+#include<stdlib.h>  /*! required for exit() */
 
-
-#include<stdio.h>
-#include<stdlib.h>
+/*! main program starts */
 int main(){
-	FILE *fp;                    //declaring a file handler
-	char str[20];                // declaring a character array of 20 elements
-	fp = fopen("file2.c","a");        //opening a file in append mode. append mode also creates new file if it not exists. if file exists it will append the data at the end of existing data. 
-	if(fp == NULL){                    //fopen will return NULL on failure
+	/* hold the reference returned by fopen() */
+	FILE *fp;
+	/*! hold the data which will be write to file using fputs */	
+       	char str[20];
+	/*! opening file2.c in append mode */
+	fp = fopen("file2.c","a");
+	/*! on failure fopen returns NULL */. 
+	if(fp == NULL){                   
 		printf("Error in opening a file....\n");
 		exit(1);
 	}
+	/*! getting input from stdin */
 	printf("Enter the String:  ");
-	while((gets(str))!=NULL){                //through gets() function take the string from user and store it in chracter array str.
-	fputs(str,fp);                           // using fputs function insert the data into a file pointed by fp.
+	while((gets(str))!=NULL){      
+		/*! wring data to the file2.c uing fputs */
+	fputs(str,fp);                           
 
 	}
-	fclose(fp);                //closing the file.
+	/*! colsing file */
+	fclose(fp);        
+	return 0;
 }
 

@@ -1,30 +1,34 @@
-/* This program will represents the how to write block of data to a file using fwrite function.
+/**
+ * This program will represents the how to write block of data to a file using fwrite function.
+ * filename : fwrite.c
+ * author   : Lakshmi narayana S
+ * email    : narayana8522@gmail.com
+ * date     : 3 Sep 2021
  *
- *
- *
- * author: Lakshmi Narayana S                                */
+ */
 
-
-
-
-
-#include<stdio.h>
-#include<stdlib.h>
-
-struct st{                            //declaring a user defined structure.
+/*! includes headers */
+#include<stdio.h>          /*! required for printf(), scanf(),fwrite() */
+#include<stdlib.h>         /*! required for exit() */
+/*! user defined structure to hold data that is written to file */
+struct st{                         
 	char name[20];
 	int age;
 };
-
+/*! main program starts */
 int main(){
-	FILE *fp;                     //Declaring a file handler
+	/*! hold the reference to file returned by fopen() */
+	FILE *fp;                  
 	int i,n;
-	fp = fopen("file1.c","wb");      //opening a file in write binary mode.
-	if(fp == NULL)                    //on error fopen will return NULL
+	/*! opening file1.c in binary write mode */
+	fp = fopen("file1.c","wb");
+	/*! on failure fopen returns NULL */.
+	if(fp == NULL)                   
 	{
 		printf("Error while opening a file...\n");
 		exit(1);
 	}
+	/*! getting input from stdin to write how many records to write */
 	printf("no of record: ");
 	scanf("%d",&n);                                                    
 	struct st person;
@@ -34,12 +38,12 @@ int main(){
 		scanf("%s",person.name);
 		printf("Enter the age: ");
 		scanf("%d",&person.age);
-		fwrite(&person,sizeof(person),1,fp);                //the fwrite() function will write the block of data to the file associated by file handler fp.
-								    //the first argument will be pointer to a memory that contains the information to be written to the file.
-								    //the second argument will be size of the each item to be written to file
-								    //the third argument will be the number of items to be wtitten to the file.
+		/*! writing data to the file */
+		fwrite(&person,sizeof(person),1,fp);               
 	}
-	fclose(fp);                              //closing the file.
+	/*! closing the file */
+	fclose(fp);           
+	return 0;
 }
 
 	

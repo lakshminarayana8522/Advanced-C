@@ -1,41 +1,46 @@
-/* this program demonistrates the how to transfer data between files
- *
- *
- *
- *
- *
- * author : Lakshmi Narayana S        */
+/**
+ * this program demonistrates the how to transfer data between files
+ * filename : transfer.c
+ * author   : Lakshmi narayana S
+ * email    : narayana8522@gmail.com
+ * date     : 3 Sep 2021
+ */
 
-
-
-
-
-
-
-#include<stdio.h>
-#include<stdlib.h>
-
+/*! includes headers */
+#include<stdio.h>   /*! required for printf(),fopen(),fclose(),fputc(),fgetc() */
+#include<stdlib.h>   /*! required for exit() */
+/*! main program starts */
 int main(){
-	FILE *sfp,*dfp;  //declaring two file handlers 
+	/*! hold the references to source and destination files */
+	FILE *sfp,*dfp; 
 	int ch;
-	sfp = fopen("file1.c","r");    //opening a source file from the data to be read in read mode.
-	if(sfp == NULL)          //on failure fopen will return NULL
+	/*! opening source file in read mode */
+	sfp = fopen("file1.c","r");
+	/*! on failure fopen returns NULL */
+	if(sfp == NULL)         
 	{
 		printf("Error in opening a source file....\n");
 		exit(1);
 	}
-	dfp = fopen("file2.c","w");      //opening a destination file where data to be writen in write mode.
-	if(dfp == NULL)                 //on failure fopen will return NULL
+	/*! opening destination file in write mode */
+	dfp = fopen("file2.c","w");
+	/*! on failure fopen returns NULL */
+	if(dfp == NULL)                 
 	{
 		printf("Error in openng a destination file....\n");
 		exit(1);
 	}
-	while((ch=fgetc(sfp))!=EOF)          //using fgec() function data is read from source file untill EOF (End Of the File) reached.
+	/*! reading data from source file using fgetc untill EOF reached */
+	while((ch=fgetc(sfp))!=EOF)         
 	{
-		fputc(ch,dfp);                //using fputc() function data is written to the destination file.
+		/*! writing the data to destination file */
+		fputc(ch,dfp);                
 	}
-	fclose(sfp);                            //closing the sourece file.
-	fclose(dfp);			 //closing the destination file
+	/*! closing source file */
+	fclose(sfp);              
+	/*! closing destination file */
+	fclose(dfp);
+	return 0;	
 }
 
 	

@@ -6,8 +6,8 @@ advanced system programming
 
 <table style="width:100%" border="1px solid black">
 <tr>
-<th>folder</th>
-<th>Discription</th>
+<th>Folder</th>
+<th>Description</th>
 <th>Link</th>
 </tr>
 <tr>
@@ -47,6 +47,11 @@ advanced system programming
 <td>fork</td>
 <td>fork() system call creates a new process, the child, which is an exact duplicate of the calling process, the parent.</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/fork">code</a></td>
+</tr>
+<tr>
+<td>forkpid</td>
+<td>Every process has a process ID and parent process ID.by using getpid() and getppid() system calls we can obtain the process ID and parent process ID</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/forkpid">code</a></td>
 </tr>
 </table>
 

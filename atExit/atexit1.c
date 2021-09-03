@@ -7,8 +7,8 @@
  */
 
 /*! Includes*/
-#include<stdio.h>
-#include<stdlib.h>
+#include<stdio.h>   /*! reuired for printf */
+#include<stdlib.h>  /*! required for atexit() */
 
 /*!programmer defined exit handler....... it is called when program terminated normally.
  * it does not accept and does not return anything...*/

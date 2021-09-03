@@ -31,31 +31,31 @@ Other operations
 
 
 <h2>fputc.c</h2>
-This file contains the example for fputc() function.
+This file contains the example for fputc() function. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/files/fputc.c">code</a>
 
 <h2>fgetc.c</h2>
-This file contains the example program for fgetc() function.
+This file contains the example program for fgetc() function. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/files/fgetc.c">code</a>
 
 <h2>fputs.c</h2>
-This file contains the example program for fputs() function.
+This file contains the example program for fputs() function. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/files/fputs.c">code</a>
 
 <h2>fgets.c</h2>
-This file contains the example program for fgets() function.
+This file contains the example program for fgets() function. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/files/fgets.c">code</a>
 
 <h2>fprintf.c</h2>
-This file contains the example program for fprintf() function.
+This file contains the example program for fprintf() function. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/files/fprintf.c">code</a>
 
 <h2>fread.c</h2>
-This file contains the program to understand fread() function.
+This file contains the program to understand fread() function. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/files/fread.c">code</a>
 
 <h2>fwrite.c</h2>
-This file contains the program to undersatnd the fwrite() function.
+This file contains the program to undersatnd the fwrite() function. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/files/fwrite.c">code</a>
 
 <h2>fseek.c</h2>
-This file contains the program to understand the fseek() function.
+This file contains the program to understand the fseek() function. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/files/fseek.c">code</a>
 
 <h2>transfer.c</h2>
-This file contains the program that explains the  transfering data between files
+This file contains the program that explains the  transfering data between files --<a href="htteps://github.com/lakshminarayana8522/Advanced-C/tree/main/files/transfer.c">code</a>
 
 
 

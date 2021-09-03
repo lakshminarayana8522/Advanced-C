@@ -17,13 +17,13 @@ Returns 0 on success, or -1 on failure
 This folder contains the programming examples of pipe
 
 <h2>pipe1.c</h2>
-This file contains the program to undestand how to create pipe.
+This file contains the program to undestand how to create pipe.  --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/IPCPipe/pipe1.c">code</a>
 
 <h2>pipe2.c</h2>
-This file contains the program to understand how communication happens through pipe.
+This file contains the program to understand how communication happens through pipe.  --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/IPCPipe/pipe2.c">code</a>
 
 <h2>pipe3.c</h2>
-This file contains the program to understand the communication between the process by stream  returned by fdopen system system call
+This file contains the program to understand the communication between the process by stream  returned by fdopen system system call --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/IPCPipe/pipe3.c">code</a>
 
 <h2>pipe4.c</h2>
-This file contains the program to understand the commnication between the main process and process created by the popen system call.
+This file contains the program to understand the commnication between the main process and process created by the popen system call. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/IPCPipe/pipe4.c">code</a>

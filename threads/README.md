@@ -19,18 +19,18 @@
  This Folder will contains the programming examples of threads.
 
 <h2>thread1.c</h2>
-This file contains the program to create thread.
+This file contains the program to create thread.  --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/threads/thread1.c">code</a>
 
 <h2>thread2.c</h2>
-This file contains the program to undestand to create multiple threads in for loop.
+This file contains the program to undestand to create multiple threads in for loop. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/threads/thread2.c">code</a>
 
 <h2>thread3.c</h2>
-This file contains the program to understand thread execution with main program.
+This file contains the program to understand thread execution with main program. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/threads/thread3.c">code</a>
 
 <h2>thread4.c</h2>
-This file contains the program to understand how thread _cancel() work.
+This file contains the program to understand how thread _cancel() work. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/threads/thread4.c">code</a>
 
 <h2>thread5.c</h2>
-This file contains the program to understand how threads access the shared resource.
+This file contains the program to understand how threads access the shared resource. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/threads/thread4.c">code</a>
 
 

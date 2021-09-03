@@ -7,8 +7,8 @@
  */
 
 /*! includes */
-#include<stdio.h>
-#include<stdlib.h>
+#include<stdio.h>  /* require for printf(),fopen(),fclose(),fgetc() */
+#include<stdlib.h>   /* required for exit() */
 
 /*! main program starts */
 int main(){

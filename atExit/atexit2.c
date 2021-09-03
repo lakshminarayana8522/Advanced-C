@@ -6,9 +6,9 @@
  * date     : 1 Sep 2021    
  */
 /*! Includes */
-#include<stdio.h>
-#include<stdlib.h>
-#include<unistd.h>
+#include<stdio.h>   /*! required for printf*/
+#include<stdlib.h>  /*! reuired for atexit() */
+#include<unistd.h>  /*! required for slepp() */
 /*! Programmer defined Exit handler 1 */
 void out1(void) 
 {
