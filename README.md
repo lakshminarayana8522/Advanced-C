@@ -53,5 +53,10 @@ advanced system programming
 <td>Every process has a process ID and parent process ID.by using getpid() and getppid() system calls we can obtain the process ID and parent process ID</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/forkpid">code</a></td>
 </tr>
+<tr>
+<td>forkwait</td>
+<td>wait() and waitpid() system calls are used to block parent until child terminates and collect the exit status of child upon termination.</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/forkwait">code</a></td>
+</tr>
 </table>
 
