@@ -58,5 +58,10 @@ advanced system programming
 <td>wait() and waitpid() system calls are used to block parent until child terminates and collect the exit status of child upon termination.</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/forkwait">code</a></td>
 </tr>
+<tr>
+<td>IPCNamedpipe</td>
+<td>the NAmed pipe (FIFO) is a interprocess communication technique. that allows communication between the unrelated processes.</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/IPC_Namedpipe">code</a></td>
+</tr>
 </table>
 
