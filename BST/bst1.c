@@ -1,186 +1,167 @@
 /**
- * This program implements the Binary search tree
+ * This program will implement the binary search tree
  * filename : bst1.c
- * author   : Lakshmi narayana S
+ * author   : Lakshmi Narayana
  * email    : narayana8522@gmail.com
- * date     : 4 Sep 2021
+ * date     : 6 Sep 2021
  */
 
 /*! include headers */
-#include<stdio.h>
-#include<stdlib.h>
+#include<stdio.h>   /*! required for printf */
+#include<stdlib.h>  /*! required for malloc(), free() */
 
-/*! BST node structure */
-typedef struct bstnode{
+/*! declaring BST node */
+typedef struct node{
 	int data;
-	struct bstnode *left;
-	struct bstnode *right;
-}*BstNodePtr;
-
-typedef struct bst{
-	BstNodePtr root;
-}BST;
+	struct node *left;
+	struct node *right;
+}bst;
 
 /**
- * inserting nodes to BST 
- * @param[in] self
+ * this function will add new node to BST
+ * @param[in] head
  * @param[in] data
- * @param[out] self
+ * @param[out] head
  */
-BstNodePtr insert_node(BstNodePtr self,int data)
+bst *add_node(bst *head,int data)
 {
-	if(self == NULL)
+	if(head == NULL)
 	{
-		self= malloc(sizeof(*self));
-		self->data = data;
-		self->left = self->right = NULL;
-
+		head = (bst *)malloc(sizeof(bst *));
+		head->data = data;
+		head->left=head->right = NULL;
 	}
-	else if(data < self->data)
+	else if(head->data >data)
 	{
-		self->left = insert_node(self->left,data);
+		head->left = add_node(head->left,data);
 	}
-	else if(data > self->data)
+	else if(head->data <data)
 	{
-		self->right = insert_node(self->right,data);
+		head->right = add_node(head->right,data);
 	}
-	return self;
-}
-/*
- * function to call insert_node() to insert node
- * @param[in] self
- * @param[in] data
- */
-void insert_bst(BST *self,int data)
-{
-	self->root = insert_node(self->root,data);
-}
-/**
- * function to display node in preorder 
- * @param[in] self
- */
-void preorder(BstNodePtr self)
-{
-	if(self!= NULL)
-	{
-	printf("%d ",self->data);
-	preorder(self->left);
-	preorder(self->right);
-	}
-}
-/**
- * function to display nodes in inorder 
- * @param[in] self
- */
-void inorder(BstNodePtr self)
-{
-	if(self)
-	{
-		inorder(self->left);
-		printf("%d ",self->data);
-		inorder(self->right);
-	}
-}
-/**
- * function to display nodes in postorder
- * @param[in] self
- */
-void postorder(BstNodePtr self)
-{
-	if(self)
-	{
-		postorder(self->left);
-		postorder(self->right);
-		printf("%d ",self->data);
-	}
+	return head;
 }
 
 /**
- * function to find min value node 
- * @param[in] self
+ * this function will finds the min node from right subtree
+ * @param[in] head
+ * @param[out] min_node
  */
-BstNodePtr find_min(BstNodePtr self)
+bst *find_min(bst *head)
 {
-	BstNodePtr current = self;
-	while(current->left)
+	bst *current = head;
+	while(current->left !=NULL)
 	{
-		current= current->left;
+		current = current->left;
 	}
 	return current;
 }
-/**
- * function to delete the node from tree
- * @param[in] self
+
+/** 
+ * This function will delete a node in BST 
+ * @param[in] head
  * @param[in] data
+ * @param[out] head
  */
-BstNodePtr delete_node(BstNodePtr self,int data)
+bst *del_node(bst *head,int data)
 {
-	if(self)
+	if(head!=NULL)
 	{
-		if( data == self->data)
+		if(data = head->data)  /*! found node to delete */
 		{
-			/*! incase od node with 2 childrens */
-			if(self->left != NULL && self->right != NULL)
+			if(head->left!=NULL && head->right!=NULL) /*! if node has 2 childs */
 			{
-				BstNodePtr Successor = find_min(self->right);
-				self->data = Successor->data;
-				self->right = delete_node(self->right,self->data);
+				bst *temp = find_min(head->right);
+				head->data = temp->data;
+				head->right = del_node(head->right,data);
 			}
-			else
-			{      
-				/*! in case of node with single child or zero */
-				BstNodePtr to_free = self;
-				if(self->left)
+			else                                        /*! if node has one child or 0 */
+			{
+				bst *temp = head;
+				if(head->right)
 				{
-					self= self->left;
+					head = head->right;
 				}
 				else
 				{
-					self = self->right;
+					head = head->left;
 				}
-				free(to_free);
+				free(temp);
 			}
 		}
-		else if(data <self->data)
+		else if(data < head->data)
 		{
-			self->left = delete_node(self->left,data);
+			head->left = del_node(head->left,data);
 		}
 		else
 		{
-			self->right = delete_node(self->right,data);
+			head->right = del_node(head->right,data);
 		}
 	}
-	return self;
+	return head;
+}
+
+
+/**
+ *  printing nodes in preorder method 
+ *  @param[in] head
+ */
+void preorder(bst *head)
+{
+	if(head!=NULL)
+	{
+	     printf("%d ",head->data);
+	     preorder(head->left);
+	     preorder(head->right);
+	}
 }
 /**
- * function to call delete_node
- * @param[in] self
- * @param[in] data
+ * printing data in inorder method
+ * @param[in] head
  */
-void delete_Bst(BST *self,int data)
+void inorder(bst *head)
 {
-	self->root = delete_node(self->root,data);
+	if(head)
+	{
+		inorder(head->left);
+		printf("%d ",head->data);
+		inorder(head->right);
+	}
 }
-	
+/**
+ * printing data in postorder method
+ * @param[in] head
+ */
+void postorder(bst *head)
+{
+	if(head)
+	{
+		postorder(head->left);
+		postorder(head->right);
+		printf("%d ",head->data);
+	}
+}
+
 /*! main program starts */
 int main()
 {
-	BST self;
-	self.root = NULL;
-	int arr[] = {3,1,2,8,5,4,7,9,11,12},i;
+	/*! to hold the root node of BST */
+	bst *head = NULL;
+	int arr[] = {10,20,30,4,3,5,6,45,63,76},i;
 	for(i=0;i<10;i++)
 	{
-		insert_bst(&self, arr[i]);
+		head = add_node(head,arr[i]);
 	}
-	delete_Bst(&self,11);
-	preorder(self.root);
+	/*! deleting a node with value 10 from BST */
+	head = del_node(head,10);
+	printf("PreOrder: ");
+	preorder(head);
 	printf("\n");
-	inorder(self.root);
+	printf("InOrder: ");
+	inorder(head);
 	printf("\n");
-	postorder(self.root);
+	printf("PostOrder: ");
+	postorder(head);
 	printf("\n");
-
-	return 0;
-}
-
-
+};
+	
