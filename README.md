@@ -78,5 +78,10 @@ advanced system programming
 <td> Message queue is a IPC mechanism technique used for communication between processes in the form of messages.</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/MessageQueue">code</a></td>
 </tr>
+<tr>
+<td> Shared Memory </td>
+<td> Shared memory allows two or more processes share the same region of physical memeory.it is faster compared to pipe and message queue IPC techniques. </td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/SharedMemory">code</a></td>
+</tr>
 </table>
 
