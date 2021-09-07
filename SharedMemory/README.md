@@ -3,7 +3,7 @@ Shared memory allows two or more processes to share the same region of physical 
 
 <h2> shm1.c </h2>
 
-This file contains the program to create shared memory segment. --<a href="https://github.com/lakshminarayan8522/Advanced-C/tree/main/SharedMemory/shm1.c">code</a>
+This file contains the program to create shared memory segment. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/SharedMemory/shm1.c">code</a>
 
 <h2> shm2.c </h2>
 
