@@ -60,8 +60,23 @@ advanced system programming
 </tr>
 <tr>
 <td>IPCNamedpipe</td>
-<td>the NAmed pipe (FIFO) is a interprocess communication technique. that allows communication between the unrelated processes.</td>
+<td>the Named pipe (FIFO) is a interprocess communication technique. that allows communication between the unrelated processes.</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/IPC_Namedpipe">code</a></td>
+</tr>
+<tr>
+<td>LinkedList</td>
+<td>List is a collection of elements. The nodes in linked list are not stored contiguosly in memory.</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/LinkedList">code<a/></td>
+</tr>
+<tr>
+<td>BST</td>
+<td>Binary search tree is a binary tree with a rule that left child is smaller than parent and right child is greater than parent</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/BST">code</a></td>
+</tr>
+<tr>
+<td>Message Queue </td>
+<td> Message queue is a IPC mechanism technique used for communication between processes in the form of messages.</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/MessageQueue">code</a></td>
 </tr>
 </table>
 
