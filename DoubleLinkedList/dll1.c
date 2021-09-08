@@ -112,26 +112,24 @@ NODE *del_node(NODE *head,int n)
 		}
 	}
 	else{
+		current = current->next;
 
-	while(current)               /*! delete at lst and middle */
-	{
-		if(current->data == n)
+       		while(current && n != current->data)               /*! delete at lst and middle */
+		{
+			current = current->next;
+		}
+
+		if(current==NULL)
+		{
+			printf("node not found...\n");
+		}
+		else
 		{
 			current->prev->next = current->next;
 			if(current->next)
 				current->next->prev = current->prev;
 			free(current);
-			return head;
 		}
-		else
-		{
-			current = current->next;
-		}
-	}
-	if(current==NULL)
-	{
-		printf("not found...\n");
-	}
 	}
 	return head;
 }
