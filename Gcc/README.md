@@ -21,12 +21,6 @@ The above command include the header file to the program.
 <div>
 #include<stdio.h>
 
-int main()
-{
-	printf("%d\n",MAX);
-	return 0;
-}
-</div>
 if above program is compiled it shows error because of MAX is undefined.
 by using the follwing command we can define the macros
 <h2> gcc -D MAX prog.c -o prog </h2>
