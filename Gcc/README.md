@@ -9,18 +9,12 @@ if we use the -E option, nothing is done except preprocessing.
 <h3> -include file </h3>
 process file as if #include "file" appeared as the first line of the primary source code..
 
-<div>
-int main()
-{
-	printf("hello world\n");
-	return 0;
-};
 
 if above program is compiled it shows error because it does not contain header file.
 we can solve the above problem by compiling the program using bellow command
 <h2> gcc -include stdio.h prog.c -o prog </h2>
 The above command include the header file to the program.
-</div>
+<
 
 <h3> -D name </h3>
  it will Predefine name as a macro, with definition 1.
