@@ -1,10 +1,9 @@
-
+#include<stdio.h>
+#define MAX 10
 int main()
 {
-	int a =10;
-	int b = 20;
-	int sum = a+b;
-	fprintf(stdout,"sum: %d\n",sum);
+	int a,b;
+	printf("%d\n",MAX);
 	return 0;
 }
 
