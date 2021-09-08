@@ -98,24 +98,41 @@ NODE *del_node(NODE *head,int n)
 	NODE *current = head;
 	if(current->data == n && current->prev==NULL)    /*! delete at first */
 	{
-		current = current->next;
-		if(current)
+		
+		if(current->next)
 		{
-			current->prev = NULL;
-			return current;
+			head = current->next;
+			head->prev = NULL;
+			free(current);
+		}
+		else
+		{
+			free(current);
+			head = NULL;
 		}
 	}
+	else{
 
 	while(current)               /*! delete at lst and middle */
 	{
 		if(current->data == n)
 		{
 			current->prev->next = current->next;
+			if(current->next)
+				current->next->prev = current->prev;
 			free(current);
+			return head;
 		}
-		current = current->next;
+		else
+		{
+			current = current->next;
+		}
 	}
-	
+	if(current==NULL)
+	{
+		printf("not found...\n");
+	}
+	}
 	return head;
 }
 
@@ -151,6 +168,7 @@ int main()
 	NODE *head = NULL;
 	/*! calling display function */
 	display(head);
+	head = del_node(head,10);
 	/*! adding node at last */
 	head = add_last(head,10);
 	head = add_last(head,20);
@@ -163,12 +181,17 @@ int main()
 	head = add_first(head,5);
 	/*! calling display function */
 	display(head);
-	head = del_node(head,5);
+	printf("\n");
+    	head = del_node(head,5);
 	display(head);
+	printf("\n");
 	head = del_node(head,40);
 	display(head);
+	printf("\n");
 	head = del_node(head,10);
 	display(head);
+	printf("\n");
+
 
 	return 0;
 }

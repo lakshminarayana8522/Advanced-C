@@ -83,5 +83,20 @@ advanced system programming
 <td> Shared memory allows two or more processes share the same region of physical memeory.it is faster compared to pipe and message queue IPC techniques. </td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/SharedMemory">code</a></td>
 </tr>
+<tr>
+<td>Double Linked List </td>
+<td> A double linked list is a linear data structure which is capable to travese in forward as well as backward direction.</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/DoubleLinkedList">code</a></td>
+</tr>
+<tr>
+<td> Dynamic Library </td>
+<td> Dynamic library helps in dynamic linking. when a linker dynamically linking with dynamic libraries, required function definitions are not copied into executable files.</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/DynamicLibrary">code</a></td>
+</tr>
+<tr>
+<td> Static Library </td>
+<td> Static libraries is the result of the linker making copy of all used library functions definitions to the executable file.</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/StaticLibrary">code</a></td>
+</tr>
 </table>
 
