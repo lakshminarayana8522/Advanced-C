@@ -34,7 +34,7 @@ by using the follwing command we can define the macros
 <h3> gcc -D MAX prog.c -o prog </h3>
 by default -D name command initialize the macro with value 1.
 <p align="center">
-<img stc="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/d3.PNG">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/d3.PNG">
 </p>
 
 
@@ -61,22 +61,22 @@ Define additional macros required for using the POSIX threads library.
 </p>
 the above code produces errors because it usees thread related libraries
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blog/main/Gcc/figures/thread2.PNG">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/thread2.PNG">
 </p>
 the follwing command will solve the error
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blog/main/Gcc/figures/thread3.PNG">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/thread3.PNG">
 </p>
 
 <h2> gcc -wall </h2>
 
 gcc -wall enables all comipler's warnings messages. This option should always be used, inorder to generate better code.
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blog/main/Gcc/figures/wall1.PNG">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/wall1.PNG">
 </p>
 Syntax:  gcc -wall filename.c -o filename
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blog/main/Gcc/figures/wall2.PNG">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/wall2.PNG">
 </p>
 
 
@@ -86,7 +86,7 @@ gcc -shared generates the shared object file for shared library.
 
 syntax: gcc -shared filename.c -o filename
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blog/main/Gcc/figures/shared.PNG">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/shared.PNG">
 </p>
 
 <h3>-pipe </h3>
