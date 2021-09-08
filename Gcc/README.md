@@ -8,15 +8,20 @@ if we use the -E option, nothing is done except preprocessing.
 
 <h3> -include file </h3>
 process file as if #include "file" appeared as the first line of the primary source code..
-![-include](https://github.com/lakshminarayana8522/Advanced-C/tree/main/Gcc/figures/include3.PNG "-include()")
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/tree/main/Gcc/figures/include3.PNG">
+</p>
 
 if above program is compiled it shows error because it does not contain header file.
-![-include](https://github.com/lakshminarayana8522/Advanced-C/tree/main/Gcc/figures/include1.PNG "-include()")
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/tree/main/Gcc/figures/include2.PNG">
+</p>
 we can solve the above problem by compiling the program using bellow command
 <h2> gcc -include stdio.h prog.c -o prog </h2>
 The above command include the header file to the program.
-![-include](https://github.com/lakshminarayana8522/Advanced-C/tree/main/Gcc/figures/include2.PNG "-include()")
-<
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/tree/main/Gcc/figures/include2.PNG">
+</p>
 
 <h3> -D name </h3>
  it will Predefine name as a macro, with definition 1.
