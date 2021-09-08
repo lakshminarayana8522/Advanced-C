@@ -9,11 +9,53 @@ if we use the -E option, nothing is done except preprocessing.
 <h3> -include file </h3>
 process file as if #include "file" appeared as the first line of the primary source code..
 
+<div>
+int main()
+{
+	printf("hello world\n");
+	return 0;
+};
+
+if above program is compiled it shows error because it does not contain header file.
+we can solve the above problem by compiling the program using bellow command
+<h2> gcc -include stdio.h prog.c -o prog </h2>
+The above command include the header file to the program.
+</div>
+
 <h3> -D name </h3>
  it will Predefine name as a macro, with definition 1.
+<div>
+#include<stdio.h>
+
+int main()
+{
+	printf("%d\n",MAX);
+	return 0;
+}
+</div>
+if above program is compiled it shows error because of MAX is undefined.
+by using the follwing command we can define the macros
+<h2> gcc -D MAX prog.c -o prog </h2>
+by default -D name command initialize the macro with value 1.
+
 
 <h3> -D name=definition </h3>
 it will predefine name as macro and intialize with definition.
+<div>
+
+#include<stdio.h>
+
+int main()
+{
+	printf("%d\n",MAX);
+	return 0;
+}
+</div>
+
+The above program will throw error because of undefined MAX;
+the following command will resolve the issue by defining the MAX
+<h2> gcc -D MAX=10 prog.c -o prog </h2>
+
 
 <h3> -pthreads </h3>
 Define additional macros required for using the POSIX threads library.
