@@ -3,7 +3,7 @@
 Compilation can invoke upto four stages: preprocessing, compilation, assembly and linking, always in the order.
 
 
-<h2> -include file </h2>
+<h1> -include file </h1>
 process file as if #include "file" appeared as the first line of the primary source code..
 <p align="center">
 <img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/include3.PNG">
@@ -20,7 +20,7 @@ The above command include the header file to the program.
 <img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/include2.PNG">
 </p>
 
-<h2> -D name </h2>
+<h1> -D name </h1>
  it will Predefine name as a macro, with definition 1.
 <p align="center">
 <img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/d1.PNG">
@@ -38,7 +38,7 @@ by default -D name command initialize the macro with value 1.
 </p>
 
 
-<h2> -D name=definition </h2>
+<h1> -D name=definition </h1>
 it will predefine name as macro and intialize with definition.
 <p align="center">
 <img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/d1.PNG">
@@ -54,7 +54,7 @@ the following command will resolve the issue by defining the MAX
 </p>
 
 
-<h2> -pthreads </h4>
+<h1> -pthreads </h1>
 Define additional macros required for using the POSIX threads library.
 <p align="center">
 <img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/thread1.PNG">
@@ -68,7 +68,7 @@ the follwing command will solve the error
 <img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/thread3.PNG">
 </p>
 
-<h2> gcc -wall </h2>
+<h1> gcc -wall </h1>
 
 gcc -wall enables all comipler's warnings messages. This option should always be used, inorder to generate better code.
 <p align="center">
@@ -80,7 +80,7 @@ Syntax:  gcc -wall filename.c -o filename
 </p>
 
 
-<h3>gcc -shared </h3>
+<h1>gcc -shared </h1>
 
 gcc -shared generates the shared object file for shared library.
 
@@ -89,5 +89,25 @@ syntax: gcc -shared filename.c -o filename
 <img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/shared.PNG">
 </p>
 
-<h3>-pipe </h3>
-use pipes rather than temparary files for communication between the variour stages of compilation.
+<h1> -ggdb3 </h1>
+This command give us permission to debug the program using gdb. -g option for debugging.
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/gdb.PNG">
+</p>
+
+<h1> -Wunused-macros </h1>
+Warn about the macros defined in the main file that are unused
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/macro1.PNG">
+</p>
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/macro2.PNG">
+</p>
+
+
+<h1> -lm </h1>
+This command link math.h library to our source file, -l option is used for linking particular library, for math.h we use -lm
+
+<h1> -c </h1>
+This command compile the program and give the object file as output, which is used to make libraries.
+
