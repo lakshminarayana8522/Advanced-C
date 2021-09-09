@@ -103,6 +103,11 @@ Warn about the macros defined in the main file that are unused
 <p align="center">
 <img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/macro2.PNG">
 </p>
+<h1> -save-temps </h1>
+This commmand produces the differnt files for each compilation stage.
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/save.PNG">
+</p>
 
 
 <h1> -lm </h1>
