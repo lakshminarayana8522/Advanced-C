@@ -17,7 +17,7 @@ Each segment contains information that is necessary for run time execution of th
 Sections contains the important data for linking and relocation.
 
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blog/main/Gcc/figures/elfs.PNG">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/elfs.PNG">
 </p>
 
 <h1> The ELF Header </h1>
