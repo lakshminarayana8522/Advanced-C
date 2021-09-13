@@ -98,5 +98,15 @@ advanced system programming
 <td> Static libraries is the result of the linker making copy of all used library functions definitions to the executable file.</td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/StaticLibrary">code</a></td>
 </tr>
+<tr>
+<td>ELF</td>
+<td> ELF (Executable and Linkable Format) is a common standard file format for executable files, object code, shared libraries and core dumps. </td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/Elf">code</a></td>
+</tr>
+<tr>
+<td>Circular Linked List </td>
+<td> Circular linked list is linked list in which last element points to the first element of the list. </td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/CircularLinkedList">code</a></td>
+</tr>
 </table>
 
