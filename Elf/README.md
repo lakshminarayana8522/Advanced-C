@@ -46,4 +46,26 @@ The section headers define all the sections in the file. This is used for linkin
 
 <b>.rodata:-></b> contains initialized data, with read access rights only <br>
 
-<b>.bss:-></b> contains uninitialized data, with read/write access rights <br>
+<b>.bss:-></b> contains uninitialized data, with read/write access rights <br
+
+<b>.init :-> </b> This section holds executable instructions tha contributes to the process initialization code. when a program starts to run, the system executes the code in this section.<br />
+
+<b>.fini: -> </b> This section holds the executable instructions that contribute to the process termination code. when program exists normally, the system executes the code in this section. <br />
+
+<b> .dynamic: -> </b> This section holds the dynamic linking information. <br />
+
+<b> .dynsym: -> </b> This section holds the dynamic linking symbol table.  <br />
+
+<h3> consider The following program as an example. and observe the elf file of the program </h3>
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/prog.PNG">
+</p>
+<h3>The local variable stored in the statck.</h3>
+
+<h3> The initialized global static,local static and global variables stored in data section </h3>
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/global.PNG">
+</p>
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/localstatic.PNG">
+</p>
