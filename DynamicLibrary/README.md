@@ -14,11 +14,14 @@ Shared libraries serve a great advantange of sharing a single copy of library am
      mul.c --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/DynamicLibrary/mul.c">code</a>
      print.c --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/DynamicLibrary/print.c">code</a>
 
- 1. Compile the source files using -fpic option.
+ <b>step 1: </b> Compile the source files using -fpic option.
 
- 2. The command to create dynamic library is
+ <b>step 2: </b> The command to create dynamic library is
      <h3> gcc -shared -o libxyz.so sum.o mul.o print.o </h3>
      libxyz.so is a shared object.
+ <b>step 3: </b> Linking with dynamic library
+     <h3> gcc filename.c ./libxyz.so -o filename </h3>
+ Command to display dependencies of executable file is <b> ldd a.out </b>
 
 <h2>prog1.c</h2>
 
