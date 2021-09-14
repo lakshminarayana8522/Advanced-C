@@ -56,6 +56,8 @@ The section headers define all the sections in the file. This is used for linkin
 
 <b> .dynsym: -> </b> This section holds the dynamic linking symbol table.  <br />
 
+<b> .dynstr: -> </b> This section holds the strings needed for dynamic linking, most commonly the strings that represent the names associated with symbol table entries. </br />
+
 <h3> consider The following program as an example. and observe the elf file of the program </h3>
 <p align="center">
 <img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/prog.PNG">
