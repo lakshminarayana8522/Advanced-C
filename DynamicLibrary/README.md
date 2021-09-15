@@ -1,30 +1,38 @@
-<h1>Dynamic Library</h1>
+<h1> Dynamic Library </h1>
 
-Dynamic libraries help in dynamic linking. Another name for dynamic lirary is "shared object" or "DLL files" in windows.
-The extension for dynamic library filrs is .so
+<p>Dynamic libraries help in dynamic linking. Another name for dynamic library is "shared object" or "DLL files" in windows. The extension for dynamic library files is .so</p>
+<p> When linker is dynamically linking with dynamic libraries, required function definitions are not copied into executable file. Thus executable size is less.</p>
+<p> Shared libraries serve a great advantage of sharing a single copy of library amoung multiple programs, hence they are called shared libraries </p>
 
-When linker is dynamically linking with dynamic libraries, required function definitions are not copied to executable file. Thus executable file size is less.
+<h1> Steps to create dynamic libraries </h1>
 
-Shared libraries serve a great advantange of sharing a single copy of library amoung multiple programs, hence they are called shared libraries
+<b>step 1: </b> Compile the source files using -fpic option <br />
+ 	<b> gcc -c -fpic filename.c </b><br />
 
-<h2> steps to create dynamic libraries </h2>
+<b>step2: </b> create shared library using follwing command <br />
+      <b> gcc -shared -o libxyz.so filename.o </b><br />
 
- source files for library functions
-     sum.c --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/DynamicLibrary/sum.c">code</a>
-     mul.c --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/DynamicLibrary/mul.c">code</a>
-     print.c --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/DynamicLibrary/print.c">code</a>
+<b> step3: </b> link the shared library to program <br />
+	<b> gcc filename.c ./library.so -o filename </b> <br />
 
- <b>step 1: </b> Compile the source files using -fpic option.
+<h1> LD_LIBRARY_PATH </h1>
 
- <b>step 2: </b> The command to create dynamic library is
-     <h3> gcc -shared -o libxyz.so sum.o mul.o print.o </h3>
-     libxyz.so is a shared object.
- <b>step 3: </b> Linking with dynamic library
-     <h3> gcc filename.c ./libxyz.so -o filename </h3>
- Command to display dependencies of executable file is <b> ldd a.out </b>
+By default the linker search for libraries in standard path.if our libraries present in non standard path. the environment variable <b> LD_LIBRARY_PATH</b> tells the linker to search for libraries in path initilized to <b>LD_LIBRARY_PATH</b>.
 
-<h2>prog1.c</h2>
+<b> step1: </b> telling Gcc where to find the shared library <br />
+	<b> gcc -L/home/lakshmi -o prog prog.c -ldisplay </b>
 
-This file contains the program which uses the dynamic library functions. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/DynamicLibrary/prog1.c">code</a>
+<b> step2: </b> Making library available at runtime using <b>LD_LIBRARY_PATH</b> <br />
+	<b>export LD_LIBRARY_PATH=/home/lakshmi </b>
 
-<h2> To link dynamic library with program: gcc filename.c ./libxyz.so -o filename </h2>
+<b> step3: </b> run the program <br />
+         <b> ./prog </b>
+
+
+<h1>display.c </h1>
+This file contains the source file of library function.  --<a href="https://github.com/lakshminarayana/8522/Advanced-C/tree/main/DynamicLibrary/display.c">code</a>
+
+<h1>prog.c</h1>
+This file contains the program that uses the shared library --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/DynamicLibrary/prog.c">code</a>
+         
+	 

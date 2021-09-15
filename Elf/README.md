@@ -56,7 +56,11 @@ The section headers define all the sections in the file. This is used for linkin
 
 <b> .dynsym: -> </b> This section holds the dynamic linking symbol table.  <br />
 
-<b> .dynstr: -> </b> This section holds the strings needed for dynamic linking, most commonly the strings that represent the names associated with symbol table entries. </br />
+<b> .dynstr: -> </b> This section holds the strings needed for dynamic linking, most commonly the strings that represent the names associated with symbol table entries. <br />
+
+<b>.symtab: -> </b> This section holds a symbol table. If the file has loadable segment that includes the symbol table, the section attributes will include the SHF _ALLOC bit. <br/>
+
+<b> .interp: -> </b>  This section holds the pathname of a program interpreter. <br />
 
 <h3> consider The following program as an example. and observe the elf file of the program </h3>
 <p align="center">
@@ -65,9 +69,15 @@ The section headers define all the sections in the file. This is used for linkin
 <h3>The local variable stored in the statck.</h3>
 
 <h3> The initialized global static,local static and global variables stored in data section </h3>
+<h3> Rhe un initialized global,local static varibles are stored in .bss section </h3>
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/global.PNG">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/elfd1.PNG">
 </p>
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/localstatic.PNG">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/elfd2.PNG">
 </p>
+
+
+<h2> testElf.c </h2>
+
+This file contains the program to check file is ELF or not. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/Elf/testElf.c">code</a>
