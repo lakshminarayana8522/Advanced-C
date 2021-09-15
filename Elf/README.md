@@ -69,7 +69,7 @@ The section headers define all the sections in the file. This is used for linkin
 <h3>The local variable stored in the statck.</h3>
 
 <h3> The initialized global static,local static and global variables stored in data section </h3>
-<h3> Rhe un initialized global,local static varibles are stored in .bss section </h3>
+<h3> The uninitialized global,local static varibles are stored in .bss section </h3>
 <p align="center">
 <img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/elfd1.PNG">
 </p>

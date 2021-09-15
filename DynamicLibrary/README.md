@@ -30,7 +30,7 @@ By default the linker search for libraries in standard path.if our libraries pre
 
 
 <h1>display.c </h1>
-This file contains the source file of library function.  --<a href="https://github.com/lakshminarayana/8522/Advanced-C/tree/main/DynamicLibrary/display.c">code</a>
+This file contains the source file of library function.  --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/DynamicLibrary/display.c">code</a>
 
 <h1>prog.c</h1>
 This file contains the program that uses the shared library --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/DynamicLibrary/prog.c">code</a>
