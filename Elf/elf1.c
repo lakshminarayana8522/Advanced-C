@@ -20,7 +20,7 @@ int main(int argc,char *argv[])
 	
 	FILE *fptr;
 	char *snames;
-	int i;
+	int i,arr[5];
 	
 	/*! opening elf file in read mode */
 	fptr = fopen(argv[1],"r");
@@ -53,11 +53,25 @@ int main(int argc,char *argv[])
 		if(section.sh_name)
 		{
 			name = snames+ section.sh_name;
+			if(strcmp(name,".data")==0)
+			{
+				fseek(fptr,section.sh_offset+0x10,SEEK_SET);
+				fread(arr,5,4,fptr);
+				
+				
+			}
 			
 		}
 		/*! printing the sections name */
 		printf("%2u %s\n",i,name);
 	}
+	printf("data in.data section: ");
+	for(i=0;i<5;i++)
+	{
+	  printf("%d ",arr[i]);
+	}
+
+	printf("\n");
 
 	return 0;
 }
