@@ -1,6 +1,7 @@
 #include<stdio.h>
 int a,b,c=2;                     /*! global variables */
-static int x,y=10,z=20;         /*! gloal static variables */
+static int x,y=10,z=20; /*! gloal static variables */
+const char str[] = "hello";
 int main()
 {
 	             /*! local variables */

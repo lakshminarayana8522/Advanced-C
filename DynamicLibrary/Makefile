@@ -1,10 +1,10 @@
 CC=gcc
 CFLAGS=-c -fpic
 
-all:display
+all: display sum
 
 %.o:%.c
 	$(CC) $(CFLAGS) $^
 
 clean:
-	rm -rf *.o display
+	rm -rf *.o display sum

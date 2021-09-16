@@ -1,7 +1,7 @@
 CC=gcc
-CFLAGS=-g -O0
+CFLAGS =-g -O0
 
-all: testElf
+all:testElf
 
 %.o:%.c
 	$(CC) $(CFLAGS) -o $^
