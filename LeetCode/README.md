@@ -10,3 +10,12 @@ This file contains the program to merge the arrays and sorted the array. --<a hr
 
 <h1>prog3.c</h1>
 This file contains the program to remove element from the array based on the value. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/LeetCode/prog3.c">code</a>
+
+<h1>reverse_list.c</h1>
+This file contains the program to reverse the single linked list. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/LeetCode/reverse_list.c">code</a>
+
+<h1>remove_node.c</h1>
+This file contains the program to remove multiple nodes from a list based on value. <a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/LeetCode/remove_node.c">code</a>
+
+
+

@@ -44,41 +44,31 @@ void display_list(NODE *head)
 
 NODE *reverse_list(NODE *head)
 {
-	NODE *current,*temp,*prev;
-	current = head;
-	while(current->next)
+	NODE *current = head,*temp = NULL;
+	while(current)
 	{
-		if((current->data%2==0))
+		if((current->data%2 == 0))
 		{
-			prev = temp;
-			temp = current->next;
-			
-				if((temp->data)%2 == 0)
-				{
-					
-					current->next = temp->next;
-					temp->next = current;
-					prev->next = temp->next;
-					
-					if(current == head)
-					{
-						head = temp;
-					}
-				}
-				else
-				{
-					current = current->next;
-				}
-			
-			
+			NODE *start,*prev,*next,*end;
+			start = current;
+			next = current->next;
+			while((next!=NULL) && (next->data %2 ==0))
+			{
+				prev = next;
+				next = next->next;
+			}
+			temp->next = prev;
+			prev->next = 
+
+		       	
+
 		}
 		else
 		{
+			temp = current;
 			current = current->next;
 		}
-	
 	}
-
 	return head;
 }
 

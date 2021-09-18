@@ -108,5 +108,10 @@ advanced system programming
 <td> Circular linked list is linked list in which last element points to the first element of the list. </td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/CircularLinkedList">code</a></td>
 </tr>
+<tr>
+<td>LeetCode </td>
+<td> This folder contains the programming solutions to leetcode problems </td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/LeetCode">code</a></td>
+</tr>
 </table>
 
