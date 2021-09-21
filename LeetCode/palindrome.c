@@ -68,7 +68,7 @@ void display(NODE *head)
 }
 
 /**
- * This function will remove the nodes from the list
+ * This function will check the list palindrome or not
  * @param[in] head
  * @param[out] int
  */

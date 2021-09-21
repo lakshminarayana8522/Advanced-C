@@ -17,5 +17,6 @@ This file contains the program to reverse the single linked list. --<a href="htt
 <h1>remove_node.c</h1>
 This file contains the program to remove multiple nodes from a list based on value. <a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/LeetCode/remove_node.c">code</a>
 
-
+<h1>palindrome.c</h1>
+This file contains the program to check given linked list is palindrome or not. <a href="https://gthub.com/lakshminarayana8522/Advanced-C/tree/main/LeetCode/palindrome.c">code</a>
 
