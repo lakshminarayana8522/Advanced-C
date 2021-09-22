@@ -114,6 +114,11 @@ advanced system programming
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/Files">code</a></td>
 </tr>
 <tr>
+<td>Redirection</td>
+<td>The dup() and dup2() system calls are used to duplicate the file descriptor values.</td>
+<td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/Redirection">code</a></td>
+</tr>
+<tr>
 <td>LeetCode </td>
 <td> This folder contains the programming solutions to leetcode problems </td>
 <td><a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/LeetCode">code</a></td>
