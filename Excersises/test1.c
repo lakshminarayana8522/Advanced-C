@@ -68,8 +68,8 @@ void print(char *ptr,int n)
 int main()
 {
 	
-	char d_arr[20] = {7,'L','a','k','s','h','m','i'};
-	const char dan[] = {8,'N','a','r','a','y','a','n','a'};
+	char d_arr[20] = {5,'s','i','d','d','u'};
+	const char dan[] = {3,'x','y','z'};
 	char *a = dan_to_c(dan);
 	printf("a: %s\n",a);
 	dan_strcatt(d_arr,dan);

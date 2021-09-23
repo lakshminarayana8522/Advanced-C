@@ -21,6 +21,7 @@ int main(int argc,char *argv[])
 	FILE *fptr;
 	char *snames;
 	int i,arr[5];
+
 	
 	/*! opening elf file in read mode */
 	fptr = fopen(argv[1],"r");
@@ -55,7 +56,7 @@ int main(int argc,char *argv[])
 			name = snames+ section.sh_name;
 			if(strcmp(name,".data")==0)
 			{
-				fseek(fptr,section.sh_offset+0x10,SEEK_SET);
+				fseek(fptr,section.sh_offset+16,SEEK_SET);
 				fread(arr,5,4,fptr);
 				
 				
@@ -70,6 +71,8 @@ int main(int argc,char *argv[])
 	{
 	  printf("%d ",arr[i]);
 	}
+	
+	
 
 	printf("\n");
 
