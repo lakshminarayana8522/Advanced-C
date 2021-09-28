@@ -1,12 +1,10 @@
 CC=gcc
 CFLAGS=-g -O0
 
-all: test test1 double
+all: tree
 
 %.o:%.c
 	$(CC) $(CFLAGS) -o $^
 
 clean:
-	rm -rf *.o test test1 double
-
-
+	rm -rf *.o tree
