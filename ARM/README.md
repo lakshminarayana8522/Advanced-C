@@ -8,14 +8,14 @@
 <h2>1. Instructions</h2>
 <b> RISC processors have a reduced number of instruction classes. These clases provide simple operations that can each execute in single cycle. The compiler or programmer synthesizes complicated operations by combining several simple instructions.Each instruction is a fixed length to allow the pipeline to fetch future instructions before decoding the current instruction.
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/blob/main/Gcc/figures/risc.jpg">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/risc.jpg">
 </p>
 
 <h2>2. Pipelines </h2>
 <p>Pipelining organizes the execution of the multiple instructions simultaneously. Pipelining improves the throughput of the system. In pipelining the instruction is divided into the subtasks. Each subtask performs the dedicated task.</p>
 
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/blob/main/Gcc/figure    s/pipeline.jpg">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/pipeline.jpg">
 </p>
 
 <h2>3. Registers </h2>
@@ -39,7 +39,7 @@ The ARM instruction set differs from the pure RISC definition in several ways th
 <h2>Inline barrel shifter </h2>
 <p>The ARM arithmetic logic unit has a 32-bit barrel shifter that is capable of shift and rotate operations. The second operand to many ARM and Thumb data-processing and single register data-transfer instructions can be shifted, before the data-processing or data-transfer is executed, as part of the instruction.</p>
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/blob/main/Gcc/figure        s/barrelshifter.jpg">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/barrelshifter.jpg">
  </p>
 
 <h2>Thumb 16-bit instruction set</h2>
@@ -56,7 +56,7 @@ The ARM instruction set differs from the pure RISC definition in several ways th
 	The cache is place between main memory and the core. It is used to speed up data transfer between the processor and main memory. A cache provides an overall increase in performence but with loss of predictble execution time. The main memory is large around 256kb to 256mb depending on the application and is generally stored in separate chips. Load and store instructions access the main memory unless the values have been stored in the cache for fast access. Secondary is the largest and slowest form of memory. Hard disk drives and CD-ROM drives are examples of secondary storage.</p>
 
  <p align="center">
- <img src="https://github.com/lakshminarayana8522/blob/main/Gcc/figure            s/memory.jpg">
+ <img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/memory.jpg">
  </p>
 <h3>Width</h3>
 <p>The memory width is the number of biits the memory returns on each access. Typecally 8, 16, 32, or 64 bits. The memory width has a direct effect on the overall performence and cost ratio.
