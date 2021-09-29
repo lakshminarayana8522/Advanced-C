@@ -1,3 +1,15 @@
+/**
+  This progrma will create a binary tree and traverse through it and find the height of the tree
+  
+filename : tree.c
+author   : Lakshmi Narayana S
+email    : narayana8522@gmail.com
+date     : 29 Sep 2021
+*/
+
+
+
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -26,6 +38,34 @@ struct node *create()
 	new->right = create();
 
 	return new;
+}
+
+/**
+  This function is to find height of tree
+  @param[in] root
+  @param[out] height
+  */
+
+int find_height(NODE *root)
+{
+	int leftheight=0,rightheight = 0;
+
+	if(root == NULL)
+	{
+		return 0;
+	}
+
+	leftheight = find_height(root->left);
+	rightheight = find_height(root->right);
+
+	if(leftheight>rightheight)
+	{
+		return leftheight+1;
+	}
+	else
+	{
+		return rightheight+1;
+	}
 }
 
 
@@ -80,6 +120,8 @@ int main()
 	printf("PostOrder: ");
 	postorder(root);
 	printf("\n");
+	printf("Height of tree : %d\n",find_height(root));
+	
 
 	return 0;
 }

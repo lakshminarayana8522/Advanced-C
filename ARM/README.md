@@ -81,7 +81,47 @@ If data is not available in any of the cache memories, it looks inside the Rando
 
 So, when a computer is started for the first time, or an application is opened for the first time, data is not available in cache memory or in RAM. In this case, the CPU gets the data directly from the hard disk drive. Thereafter, when you start your computer or open an application, CPU can get that data from cache memory or RAM.</p>
 
-<h3>Types of memory</h3>
+<h2> Cache Algorithms</h2>
+<p>A Cache algorithm is an algorithm used to manage a cache or group of data. When the cache is full, it decides which item should be deleted from the cache.</p>
+
+</h3>First in first out (FIFO)</h3>
+<p>Using this algorithm the cache behaves in the same way as a FIFO queue. The cache evicts the blocks in the order they were added, without any regard to how often or how many times they were accessed before.</p>
+
+<h3>Last in first out (LIFO) or First in last out (FILO)</h3>
+<p>Using this algorithm the cache behaves in the same way as a stack and opposite way as a FIFO queue. The cache evicts the block added most recently first without any regard to how often or how many times it was accessed before.</p>
+<h3>Most Recently Used (MRU):</h3> 
+<p>This algorithm deletes the most recently used items first. This caching mechanism is commonly used for database memory caches.</p>
+<p>The access sequence for the below example is A B C D E C D B.</p>
+
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/MRU.png">
+</p>
+
+<p>Here, A B C D are placed in the cache as there is still space available. At the 5th access E, we see that the block which held D is now replaced with E as this block was used most recently. Another access to C and at the next access to D, C is replaced as it was the block accessed just before D and so on.</p>
+
+
+<h3>Least Frequently Used (LFU):</h3>
+<p> LFU counts how often an item is needed. Those that are used least often are discarded first.</p>
+<p>The access sequence for the below example is A B C D E D F.</p>
+
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/LRU.png">
+</p>
+
+
+<p>In the above example once A B C D gets installed in the blocks with sequence numbers (Increment 1 for each new Access) and when E is accessed, it is a miss and it needs to be installed in one of the blocks. According to the LRU Algorithm, since A has the lowest Rank(A(0)), E will replace A.
+
+In the second last step D is accessed and therefore the sequence number is updated.
+
+LRU, like many other replacement policies, can be characterized using a state transition field in a vector space, which decides the dynamic cache state changes similar to how an electromagnetic field determines the movement of a charged particle placed in it</p>
+
+<h3>Random replacement (RR)</h3>
+<p>Randomly selects a candidate item and discards it to make space when necessary. This algorithm does not require keeping any information about the access history. For its simplicity, it has been used in ARM processors.</p>
+
+<h3>Least-frequently used (LFU)</h3>
+<p>Counts how often an item is needed. Those that are used least often are discarded first. This works very similar to LRU except that instead of storing the value of how recently a block was accessed, we store the value of how many times it was accessed. So of course while running an access sequence we will replace a block which was used fewest times from our cache. E.g., if A was used (accessed) 5 times and B was used 3 times and others C and D were used 10 times each, we will replace B.</p>
+
+<h2>Types of memory</h2>
 <p>There are many different types of memory.
 
 <h3>RAM (Random Access Memory)</h3>
