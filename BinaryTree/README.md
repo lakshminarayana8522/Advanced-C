@@ -72,6 +72,44 @@ The minimum number of nodes possible at height h is equal to h+1.</p>
 </p>
 <p>The above tree is not a balanced binary tree because the difference between the left subtree and the right subtree is greater than 1.</p>
 
+<h2>Tree Traversal</h2>
+<p>Traversal is a process to visit all the nodes of a tree and may print their values too. Because, all nodes are connected via edges (links) we always start from the root (head) node. That is, we cannot randomly access a node in a tree. There are three ways which we use to traverse a tree </p>
+In-order Traversal<br />
+Pre-order Traversal<br />
+Post-order Traversal<br />
+
+<h2>In-Order Traversal </h2>
+<p>In this traversal method, the left subtree is visited first, then the root and later the right sub-tree. We should always remember that every node may represent a subtree itself.
+
+If a binary tree is traversed in-order, the output will produce sorted key values in an ascending order.</p>
+
+<h3>Algorithm</h3>
+Until all nodes are traversed −<br />
+<b>Step 1</b> − Recursively traverse left subtree.<br />
+<b>Step 2</b> − Visit root node.<br />
+<b>Step 3</b> − Recursively traverse right subtree.<br />
+
+<h2>Pret Order Traversal </h2>
+<p>In this traversal method, the root node is visited first, then the left subtree and finally the right subtree</p>
+
+<h3>Algorithm</h3>
+Until all nodes are traversed −<br />
+Step 1 − Visit root node.<br />
+Step 2 − Recursively traverse left subtree.<br />
+Step 3 − Recursively traverse right subtree.<br />
+
+<h2>Post-Order Traversal </h2>
+<p>In this traversal method, the root node is visited last, hence the name. First we traverse the left subtree, then the right subtree and finally the root node.</p>
+
+<h3>Algorithm</h3>
+Until all nodes are traversed −<br />
+Step 1 − Recursively traverse left subtree.<br />
+Step 2 − Recursively traverse right subtree.<br />
+Step 3 − Visit root node.<br />
+
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/traversal.jpg">
+</p>
 
 <h2>tree.c</h2>
 This file contains the program to execute the binary tree. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/BinaryTree/tree.c">code</a>
