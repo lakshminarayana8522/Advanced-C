@@ -44,8 +44,10 @@ The ARM instruction set differs from the pure RISC definition in several ways th
 
 <h2>Thumb 16-bit instruction set</h2>
 <p>The Thumb instruction set consists of 16-bit instructions that act as a compact shorthand for a subset of the 32-bit instructions of the standard ARM. Every Thumb instruction could instead be executed via the equivalent 32-bit ARM instruction.</p>
-
-<h2>Conditional ececution</h2>
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/thumb1.png">
+</p>
+<h2>Conditional execution</h2>
 <p>An instruction is only executed when a specific condition has been satisfied. This feature improves performence and code density by reducing branch instructions.</p>
 
 <h2>Memory</h2>
