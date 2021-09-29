@@ -82,22 +82,38 @@ So, when a computer is started for the first time, or an application is opened f
 <h3>Types of memory</h3>
 <p>There are many different types of memory.
 
+<h3>RAM (Random Access Memory)</h3>
+<p>RAM, which stands for Random Access Memory, is a hardware device generally located on the motherboard of a computer and acts as an internal memory of the CPU. It allows CPU store data, program, and program results when you switch on the computer. It is the read and write memory of a computer, which means the information can be written to it as well as read from it.</p>
+<p>RAM is a volatile memory, which means it does not store data or instructions permanently. When you switch on the computer the data and instructions from the hard disk are stored in the RAM, e.g., when the computer is rebooted, and when you open a program, the operating system (OS), and the program are loaded into RAM, generally from an HDD or SSD. CPU utilizes this data to perform the required tasks. As soon as you shut down the computer, the RAM loses the data. So, the data remains in the RAM as long as the computer is on and lost when the computer is turned off. The benefit of loading data into RAM is that reading data from the RAM is much faster than reading from the hard drive.</p>
+
+<h3>SRAM (Static Random Access Memory </h3>
+<p>Static RAM (SRAM) is a type of random access memory that retains its state for data bits or holds data as long as it receives the power. It is made up of memory cells and is called a static RAM as it does not need to be refreshed on a regular basis because it does not need the power to prevent leakage, unlike dynamic RAM. So, it is faster than DRAM.</p>
+<p>The drawback with Static RAM is that its memory cells occupy more space on a chip than the DRAM memory cells for the same amount of storage space (memory) as it has more parts than a DRAM. So, it offers less memory per chip.</p>
+
+<h3>Dynamic RAM</h3>
+<p>Dynamic Ram (DRAM) is also made up of memory cells. It is an integrated circuit (IC) made of millions of transistors and capacitors which are extremely small in size and each transistor is lined up with a capacitor to create a very compact memory cell so that millions of them can fit on a single memory chip. So, a memory cell of a DRAM has one transistor and one capacitor and each cell represents or stores a single bit of data in its capacitor within an integrated circuit.
+
+The capacitor holds this bit of information or data, either as 0 or as 1. The transistor, which is also present in the cell, acts as a switch that allows the electric circuit on the memory chip to read the capacitor and change its state.
+
+The capacitor needs to be refreshed after regular intervals to maintain the charge in the capacitor. This is the reason it is called dynamic RAM as it needs to be refreshed continuously to maintain its data or it would forget what it is holding. </p>
+
+<h3>Synchronous DRAM</h3>
+<p>SDRAM (Synchronous DRAM) began to appear in late 1996. In SDRAM, the RAM was synchronized with the CPU clock. It allowed the CPU or to be precise the memory controller to know the exact clock cycle or timing or the number of cycles after which the data will be available on the bus. So, the CPU does not need for the memory accesses and thus the memory read and write speed can be increased. The SDRAM is also known as the single data rate SDRAM (SDR SDRAM) as data is transferred only at each rising edge of the clock cycle. </p>
+
+<h3>DDR SDRAM</h3>
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/ram6.png">
+</p>
+<p>The next generation of the synchronous DRAM is known as the DDR RAM. It was developed to overcome the limitations of SDRAM and was used in PC memory at the beginning of the year 2000. In DDR SDRAM (DDR RAM), the data is transferred twice during each clock cycle; during the positive edge (rising edge) and the negative edge (falling edge) of the cycle. So, it is known as the double data rate SDRAM.
+
+There are different generations of DDR SDRAM which include DDR1, DDR2, DDR3, and DDR4.</p>
+
 <h3>Read Only Memory(ROM)</h3>
 <p>ROM stands for Read Only Memory. The memory from which we can only read but cannot write on it. This type of memory is non-volatile. The information is stored permanently in such memories during manufacture. A ROM stores such instructions that are required to start a computer. This operation is referred to as bootstrap. ROM chips are not only used in the computer but also in other electronic items like washing machine and microwave oven.</p>
 
 <h3>Flash ROM </h3>
-<p> special type of memory that works like both RAM and ROM. You can write information to flash memory, like you can with RAM, but that information isn’t erased when the power is off, like it is with ROM. The erasing and writing of flash ROM are completely software controlled with no additional hardware circutary required, Which reduces the manufacturing costs.</p> 
+<p> special type of memory that works like both RAM and ROM. You can write information to flash memory, like you can with RAM, but that information isn’t erased when the power is off, like it is with ROM. The erasing and writing of flash ROM are completely software controlled with no additional hardware circutary required, Which reduces the manufacturing costs.It stores information in an arrangement or array of memory cells made from floating-gate transistors. The advantage of using this memory is that you can delete or write blocks of data around 512 bytes at a particular time. Whereas, in EEPROM, you can delete or write only 1 byte of data at a time. So, this memory is faster than EEPROM.</p> 
 
-<h3>DRAM</h3>
-<p>As the name DRAM, or dynamic random access memory, implies, this form of memory technology is a type of random access memory. It stores each bit of data on a small capacitor within the memory cell. The capacitor can be either charged or discharged and this provides the two states, "1" or "0" for the cell.
-
-Since the charge within the capacitor leaks, it is necessary to refresh each memory cell periodically. This refresh requirement gives rise to the term dynamic - static memories do not have a need to be refreshed.</p>
-
-<h3>SRAM</h3>
-<p>Static random access memory (SRAM) is faster than the DRAM, but requires more silicon area. SRAM does not require refreshing. The access time for SRAM is shorter than the DRAM because SRAM does not require a pause between data accesses. It is mostly used as caches.</p>
-
-<h3>SDRAM</h3>
-<p>Synchronous dynamic random access memory (SDRAM) is dynamic random access memory (DRAM) with an interface synchronous with the system bus carrying data between the CPU and the memory controller hub. SDRAM has a rapidly responding synchronous interface, which is in sync with the system bus. SDRAM waits for the clock signal before it responds to control inputs.</p>
 
 <h2>Peripherals</h2>
 Embedded System that interact with the outside world need some form of peripheral device. A peripheral device performs input and output functions for the chip by connecting to other devices or sensors that aree off-chip.
