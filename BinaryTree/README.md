@@ -111,5 +111,22 @@ Step 3 − Visit root node.<br />
 <img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/traversal.jpg">
 </p>
 
+<h1>Balenced Tree</h1>
+<p>A balanced binary tree is also known as height balanced tree. It is defined as binary tree in when the difference between the height of the left subtree and right subtree is not more than m, where m is usually equal to 1. The height of a tree is the number of edges on the longest path between the root node and the leaf node.</p>
+
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/balancedtree.png">
+</p>
+
+<h2>Rotate Right </h2>
+
+</p>T1, T2, T3 and T4 are subtrees.
+         z                                      y 
+        / \                                   /   \
+       y   T4      Right Rotate (z)          x      z
+      / \          - - - - - - - - ->      /  \    /  \ 
+     x   T3                               T1  T2  T3  T4
+    / \
+  T1   T2  </p>
 <h2>tree.c</h2>
 This file contains the program to execute the binary tree. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/BinaryTree/tree.c">code</a>
