@@ -143,22 +143,22 @@ An AVL tree is given in the following figure. We can see that, balance factor as
 
 <h2>Rotate Right </h2>
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/ll.png">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/ll.PNG">
 </p>
 
 <h2>Rotate Left</h2>
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/rr.png">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/rr.PNG">
 </p>
 
 <h2>Rotate Left Right</h2>
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/lr.png">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/lr.PNG">
 </p>
 
 <h2>Rotate Right Left </h2>
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/rl.png">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/rl.PNG">
 </p>
 
 <h2>tree.c</h2>
