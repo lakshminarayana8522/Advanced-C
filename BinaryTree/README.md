@@ -113,20 +113,53 @@ Step 3 − Visit root node.<br />
 
 <h1>Balenced Tree</h1>
 <p>A balanced binary tree is also known as height balanced tree. It is defined as binary tree in when the difference between the height of the left subtree and right subtree is not more than m, where m is usually equal to 1. The height of a tree is the number of edges on the longest path between the root node and the leaf node.</p>
-
 <p align="center">
 <img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/balancedtree.png">
 </p>
 
-<h2>Rotate Right </h2>
+<h1>AVL Tree</h1>
+<p>AVL Tree can be defined as height balanced binary search tree in which each node is associated with a balance factor which is calculated by subtracting the height of its right sub-tree from that of its left sub-tree.
 
-</pre>T1, T2, T3 and T4 are subtrees.
-         z                                      y 
-        / \                                   /   \
-       y   T4      Right Rotate (z)          x      z
-      / \          - - - - - - - - ->      /  \    /  \ 
-     x   T3                               T1  T2  T3  T4
-    / \
-  T1   T2  </pre>
+Tree is said to be balanced if balance factor of each node is in between -1 to 1, otherwise, the tree will be unbalanced and need to be balanced.
+
+Balance Factor (k) = height (left(k)) - height (right(k))<br />
+If balance factor of any node is 1, it means that the left sub-tree is one level higher than the right sub-tree.</p>
+<p>If balance factor of any node is 0, it means that the left sub-tree and right sub-tree contain equal height.
+
+If balance factor of any node is -1, it means that the left sub-tree is one level lower than the right sub-tree.
+
+An AVL tree is given in the following figure. We can see that, balance factor associated with each node is in between -1 and +1. therefore, it is an example of AVL tree.</p>
+
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/Avl.png">
+</p>
+
+<h2>Why AVL Tree?</h2>
+<p>AVL tree controls the height of the binary search tree by not letting it to be skewed. The time taken for all operations in a binary search tree of height h is O(h). However, it can be extended to O(n) if the BST becomes skewed (i.e. worst case). By limiting this height to log n, AVL tree imposes an upper bound on each operation to be O(log n) where n is the number of nodes.</p>
+
+<h2>AVL Rotations</h2>
+<p>We perform rotation in AVL tree only in case if Balance Factor is other than -1, 0, and 1. There are basically four types of rotations which are as follows:</p>
+
+
+<h2>Rotate Right </h2>
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/ll.png">
+</p>
+
+<h2>Rotate Left</h2>
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/rr.png">
+</p>
+
+<h2>Rotate Left Right</h2>
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/lr.png">
+</p>
+
+<h2>Rotate Right Left </h2>
+<p align="center">
+<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/rl.png">
+</p>
+
 <h2>tree.c</h2>
 This file contains the program to execute the binary tree. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/BinaryTree/tree.c">code</a>
