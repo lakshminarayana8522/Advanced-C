@@ -120,13 +120,13 @@ Step 3 − Visit root node.<br />
 
 <h2>Rotate Right </h2>
 
-</div>T1, T2, T3 and T4 are subtrees.
+</pre>T1, T2, T3 and T4 are subtrees.
          z                                      y 
         / \                                   /   \
        y   T4      Right Rotate (z)          x      z
       / \          - - - - - - - - ->      /  \    /  \ 
      x   T3                               T1  T2  T3  T4
     / \
-  T1   T2  </div>
+  T1   T2  </pre>
 <h2>tree.c</h2>
 This file contains the program to execute the binary tree. --<a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/BinaryTree/tree.c">code</a>
