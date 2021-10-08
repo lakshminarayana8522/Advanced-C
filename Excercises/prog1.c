@@ -30,24 +30,20 @@ Date     : 30 Sep 2021
 #include<stdio.h>   /*! required for printf() scanf()  */
 
 /**
-  This function is for finding the power of 10
-  @param[in] 10,
-  @param[in] b power value
-  @param[out] 10^b
+  This function will reverse the number
+  @param[in] a
+  @param[out] num
   */
-int power(int a,int b)
+
+int reverse(int a)
 {
-	int val = 1;
-	if(b==0)
+	int num = 0;
+	while(a)
 	{
-		return 1;
+		num = num * 10 + (a%10);
+		a = a/10;
 	}
-	while(b)
-	{
-		val = val *a;
-		b--;
-	}
-	return val;
+	return num;
 }
 
 /*! main program starts */
@@ -64,34 +60,33 @@ int main()
 
 	for(i=0;i<4;i++)
 	{
-		a = 0;
-		if(i%2 == 0)
+		a = input[0]%10;
+		input[0] = input[0]/10;
+		
+		for(j=1;j<3;j++)
 		{
-			for(j=0;j<3;j++)
+			if(i%2 == 0)
 			{
 				if(a<(input[j]%10))
 				{
 					a = input[j]%10;
 				}
-				input[j] = input[j]/10;
 			}
-			result = a*power(10,i)+ result;
-		}
-		else
-		{
-			a = input[0]%10;
-			input[0] = input[0]/10;
-			for(j=1;j<3;j++)
+			else
 			{
-		        	if(a>(input[j]%10))
-		                {
+				if(a>input[j]%10)
+				{
 					a = input[j]%10;
 				}
-				input[j] = input[j]/10;
 			}
-		  	result = a*power(10,i) + result;
+
+			input[j] = input[j]/10;
 		}
+		
+		 result = result*10 + a;
 	}
+
+	result = reverse(result);
 
 	printf("result: %d\n",result);
 
