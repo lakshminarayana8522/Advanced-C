@@ -29,20 +29,20 @@ on the default tool, memcheck. Memcheck can detect:  </p>
 </p>
 <h1>Memory leak </h1>
 <p>I have created a program which causes the memory leak </p>
-<p>mem_leak_valgrind.c <a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/Day2Day/debugging/mem_leak_valgrind.c">----code</a></p>
+<p>mem_leak_valgrind.c <a href="https://github.com/lakshminarayana1516/Advanced-C-1/tree/main/Day2Day/debugging/valgrind/mem_leak_valgrind.c">----code</a></p>
 <h3>run the above program using valgrind tool</h3>
 <p>
 	valgrind --tool=memcheck --leak-check=yes ./mem_leak_valgrind 
 </p>
 <h1>Reasult</h1>
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/valgrind.png">
+<img src="https://github.com/lakshminarayana1516/Advanced-C-1/blob/main/figures/valgrind.png">
 </p>
 
 
 <h1>Double free </h1>
 <p>This program will free the dynamically allocated memory twice. we can detect this using valgrind</p>
-<p>mem_double_free.c <a href="https://github.com/lakshminarayana8522/Advanced-C/tree/main/Day2Day/debugging/mem_double_free.c">---code</a></p>
+<p>mem_double_free.c <a href="https://github.com/lakshminarayana1516/Advanced-C-1/tree/main/Day2Day/debugging/valgrind/double_free.c">---code</a></p>
 
 <h3>Run the above program using valgrind tool </h3>
 <p>
@@ -50,5 +50,5 @@ on the default tool, memcheck. Memcheck can detect:  </p>
 </p>
 <h1>Result</h1>
 <p align="center">
-<img src="https://github.com/lakshminarayana8522/Advanced-C/blob/main/Gcc/figures/double_free.png">
+<img src="https://github.com/lakshminarayana1516/Advanced-C-1/blob/main/figures/double_free.png">
 </p>
