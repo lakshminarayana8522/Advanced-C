@@ -22,12 +22,12 @@ int main()
 	/*! fork returns -1 on failure*/
 	if(pid<0)
 	{
-		printf("failed to fork..\n");
+		printf("child process is not created...\n");
 	}
 	/*! fork returns 0 in child process */
 	else if(pid == 0)
 	{
-		printf("in child process...\n");
+		printf("in child process..\n");
 	}
 	/*! fork returns child process ID in parent process */
 	else if(pid>0)

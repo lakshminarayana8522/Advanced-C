@@ -34,7 +34,7 @@ int main()
 	/*! on success fork will return 0 in child process */
 	else if(pid == 0)
 	{
-		printf("In Child process...\n");
+		printf("In Child process..\n");
 		/*! when child is created, all the parent process values are duplicated to child. 
 		 * so the file discriptor value returned by open in parent process is also copied to child. */
 		/*! reading data from testfile */
